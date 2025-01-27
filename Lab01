@@ -43,10 +43,10 @@ Windows PowerShell
 ``` 
 Put your words here
 ```
-9. Make a copy of `test.txt` named `copy.txt` in `DirA`:
-10. View the contents of `DirA`: 
-11. Make a copy of `test.txt` in `Dir B` named `fodder.txt`:
-12. Delete / remove both `fodder.txt` AND `Dir B`:
+9. Make a copy of `test.txt` named `copy.txt` in `DirA`: Copy-item DirA\test.txt
+10. View the contents of `DirA`: Get-ChildItem DirA
+11. Make a copy of `test.txt` in `Dir B` named `fodder.txt`: Copy-Item DirA\test.txt "Dir B\fodder.txt"
+12. Delete / remove both `fodder.txt` AND `Dir B`: Remove-Item "Dir B\fodder.txt"; Remove-Item "Dir B" -recurse
 
 ## Citations
 
