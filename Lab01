@@ -11,16 +11,15 @@
 
 | Windows | Linux / Mac | Action |
 | ---     | ---         | ---    |
-| help    | man         |        |
-| Get-Location | pwd    |        |
-| Get-ChildItem | ls    |        |
-| mkdir   | mkdir       |        |
-| Set-Location | cd     |        |
-| New-Item | touch      |        |
-| Move-Item | mv        |        |
-| Copy-Item | cp        |        |
-| Remove-Item | rm      |        |
-| notepad.exe | vim     |        |
+| help    | man         |  Explains all functions for powershell      |
+| Get-Location | pwd    |     shows the path in a directory   |
+| Get-ChildItem | ls    |      brings items like folders and contents within it  |
+| mkdir   | mkdir       |    makes a directory    |
+| Set-Location | cd     |      sets the area in which you are working  |
+| New-Item | touch      |    makes a new item    |
+| Move-Item | mv        |    moves items
+| Remove-Item | rm      |   removes items     |
+| notepad.exe | vim     |   opens notepad.exe     |
 
 ## Part 3 - Command Line Navigation
 
@@ -30,13 +29,13 @@ My OS is:
 - [] Mac
 
 My Command Line Shell is: 
-
+Windows PowerShell
 ### Navigating My OS on the Command Line
 
-1. Create a directory named `DirA`:
-2. Create a directory named `Dir B`:
-3. Go into `DirA`:
-4. Go into `Dir B` from `DirA`:
+1. Create a directory named `DirA`: mkdir DirA
+2. Create a directory named `Dir B`:mkdir "Dir B"
+3. Go into `DirA`:cd DirA
+4. Go into `Dir B` from `DirA`: cd..,cd Dir B
 5. Return to your user's home directory:
 6. Create a file named `test.txt`:
 7. Move the file named `test.txt` into `DirA`:
@@ -52,3 +51,5 @@ Put your words here
 ## Citations
 
 To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+https://ss64.com/ps/get-location.html 
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.4
